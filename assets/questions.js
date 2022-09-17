@@ -19,9 +19,5 @@ const questions =[
 		options: ["string", "boolean", "happy", "number"],
 		answer: "happy",
 	}
-{
-	questionTitle: "Which of these is accurate FOR LOOP statment?",
-	options: 
-	answer:
-}
+
 ]

@@ -18,10 +18,17 @@
     <a>Time Remaining :<span id= "countDown">180 seconds</span></a>
   </div>
 </header>
-
+<!--main page-->
 <body>
-	<div id="home" class="flex-center flex-column">
-		<h1>Code Quiz</h1>
+	<section class="mainPage">
+		<div id ="title">Code Quiz Challenge</div>
+  <!--description-->
+  <div class="summary" id = "mainPageSummary"
+  <p>Try to answer the following code-related questions within the time
+    limit. Keep in mind the incorrect answers will penalize your
+    score and time by ten seconds!</p>
+  </section>
+
   <input id="view-scores" type="button" value="View Scores">
   <span id="timer">Time: 0</span>
   <div id="scores-div"></div>
@@ -39,6 +46,7 @@
 		<h1 id="question-title"></h1>
 		<div id="choices"></div>
 	</div>
+
   <script src="assets/questions.js"></script>
   <script src="assets/script.js"></script>
 

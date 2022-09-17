@@ -16,3 +16,19 @@ color: purple;
 justify-content: space-between;
 padding: 20px, 40px;
 }
+.mainPage {
+	justify-content: center;
+	flex-wrap: wrap;
+	margin-top: 40px;
+	margin-right: 20vw;
+}
+#title {
+text-align: center;
+font-size: 40px;
+padding: 50px 0;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#mainPageSummary {
+justify-content: center;
+flex-wrap: wrap;
+}
