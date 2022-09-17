@@ -1,11 +1,11 @@
-var questions =[
+const questions =[
 	{
 		questionTitle: "Which one of the following ISNOT a data type? 1",
 		options: ["string", "boolean", "happy", "number"],
 		answer: "happy",
 	},
 	{
-		questionTitle: "Which one of the following ISNOT a data type?2",
+		questionTitle: "Which one of the following IS NOT a data type?2",
 		options: ["string", "boolean", "happy", "number"],
 		answer: "happy",
 	},
@@ -15,9 +15,13 @@ var questions =[
 		answer: "happy",
 	},
 	{
-		questionTitle: "Which one of the following ISNOT a data type?4",
+		questionTitle: "Which one of the following ISNOT a data type?",
 		options: ["string", "boolean", "happy", "number"],
 		answer: "happy",
 	}
-
+{
+	questionTitle: "Which of these is accurate FOR LOOP statment?",
+	options: 
+	answer:
+}
 ]

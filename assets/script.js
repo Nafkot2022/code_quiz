@@ -17,3 +17,6 @@ function getQuestions(){
 }
 
 startButton.onclick= startQuiz;
+
+//event listern//
+
