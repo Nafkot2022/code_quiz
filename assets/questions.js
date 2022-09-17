@@ -19,5 +19,6 @@ const questions =[
 		options: ["string", "boolean", "happy", "number"],
 		answer: "happy",
 	}
-
 ]
+
+

@@ -31,5 +31,6 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 #mainPageSummary {
 justify-content: center;
 flex-wrap: wrap;
+display: flex;
 }
 
