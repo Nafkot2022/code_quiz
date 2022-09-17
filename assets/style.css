@@ -1,0 +1,18 @@
+.rightHeader{
+	color:red;
+}
+
+.leftHeader{
+	color: purple;
+	padding: 5px;
+	text-decoration-style: double;
+}
+
+.mainHeader {
+display:flex;
+width: 80vw;
+font-family: Arial, Helvetica, sans-serif;
+color: purple;
+justify-content: space-between;
+padding: 20px, 40px;
+}
