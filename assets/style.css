@@ -1,5 +1,8 @@
 body{
 	background-color: whites;
+	display: block;
+	margin: 10;
+	box-sizing: content-box;
 }
 
 
@@ -58,8 +61,17 @@ align-items: center;
 	margin: 10px;
 	font-size: large;
 	border-radius: 10px;
-	padding: ;
 }
+
+#incorrectAnswer{
+	text-align: center;
+	font-size: medium;
+	font-style: italic;
+	color: red;
+	padding: 20px;
+	width: 60vw;
+}
+
 /*questions and answers area*/
 .answers {
 	width: 60vw;
