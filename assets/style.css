@@ -41,14 +41,14 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 #mainPageSummary {
 flex-wrap: wrap;
 justify-content: center;
-padding: 20px ;
+padding: 15px 26vw ;
 display: block;
 align-items: center;
 }
 
 /*buttons*/
 .startQuizBtnArea{
-	padding: 50px;
+	padding: 40px;
 	margin-left: 650px;
 }
 #startQuizBtn{
