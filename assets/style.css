@@ -1,3 +1,13 @@
+/*buttons*/
+.startQuizBtn{
+	background-color: purple;
+	color: white;
+	justify-content: left;
+	margin: 10px;
+	font-size: large;
+	border-radius: 10px;
+}
+
 .rightHeader{
 	color:red;
 }
