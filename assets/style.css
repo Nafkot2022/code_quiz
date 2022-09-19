@@ -1,12 +1,7 @@
-/*buttons*/
-.startQuizBtn{
-	background-color: purple;
-	color: white;
-	justify-content: left;
-	margin: 10px;
-	font-size: large;
-	border-radius: 10px;
+body{
+	background-color: whites;
 }
+
 
 .rightHeader{
 	color:red;
@@ -38,9 +33,37 @@ font-size: 40px;
 padding: 50px 0;
 font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+.summary{
+	display: block;
+	align-items: center;
+	justify-content: center;
+}
 #mainPageSummary {
-justify-content: center;
 flex-wrap: wrap;
-display: flex;
+justify-content: center;
+padding: 20px ;
+display: block;
+align-items: center;
 }
 
+/*buttons*/
+.startQuizBtnArea{
+	padding: 50px;
+	margin-left: 650px;
+}
+#startQuizBtn{
+	background-color: purple;
+	color: white;
+	justify-content: right;
+	margin: 10px;
+	font-size: large;
+	border-radius: 10px;
+	padding: ;
+}
+/*questions and answers area*/
+.answers {
+	width: 60vw;
+	display:flex;
+	align-items: center;
+	justify-content: center;
+}

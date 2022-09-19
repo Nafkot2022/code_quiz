@@ -1,4 +1,4 @@
-const startButton= document.getElementById("start-button");
+const startButton= document.getElementById("startQuiz");
 const choicesEl = document.getElementById("choices");
 function startQuiz(){
 getQuestions();
