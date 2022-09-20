@@ -24,7 +24,7 @@ color: purple;
 justify-content: space-between;
 padding: 20px, 40px;
 }
-.mainPage {
+#mainPage {
 	justify-content: center;
 	flex-wrap: wrap;
 	margin-top: 40px;

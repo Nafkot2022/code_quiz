@@ -19,18 +19,27 @@
 </header>
 <!--main page-->
 <body>
-	<section class="mainPage">
+	<section id="mainPage">
 		<div id ="title">Code Quiz Challenge</div>
   <!--description-->
   <div class="summary" id ="mainPageSummary">
   Try to answer the following code-related questions within the time
     limit. Keep in mind the incorrect answers will penalize your
     score and time by ten seconds!</div>
+    <!--start quiz button-->
+    <section class="startQuizBtnArea">
+      <button click ="start-quiz" id="startQuizBtn" class = "startQuiz"> Start Quiz </button>
+    </section>
   </section>
-<!--start quiz button-->
-  <section class="startQuizBtnArea">
-    <button click ="start-quiz" id="startQuizBtn" class = "startQuiz"> Start Quiz </button>
-  </section>
+<!--question and answer options container-->
+    <section class ="choicesContainer" style="display: block">
+      <h2 id = "option"></h2>
+      <div id ="choices"></div>
+    </section>
+  </body>
+  
+<!--user info input-->
+
   <!--incorrect answer display-->
 <footer>
   <h3 id="incorrectAnswer"></h3>

@@ -1,5 +1,6 @@
-const startButton= document.getElementById("startQuiz");
+const startButton= document.getElementById("startQuizBtn");
 const choicesEl = document.getElementById("choices");
+const mainPageEl =document.getElementById("mainPage");
 function startQuiz(){
 getQuestions();
 
@@ -7,8 +8,9 @@ getQuestions();
 var currentQuestionIndex = 0;
 function getQuestions(){
 	console.log(questions[currentQuestionIndex].questionTitle);
+	mainPageEl.setAttribute("hidden", true);
 	let currentQuestion = questions[currentQuestionIndex];
-	let questionTitle = document.getElementById("question-title");
+	let questionTitle = document.getElementById("option");
 	questionTitle.textContent= questions[currentQuestionIndex].questionTitle;
 	choicesEl.textContent=""
 	//console.log(questions[currentQuestionIndex].options);
@@ -35,7 +37,13 @@ function questionClick (){
 		console.log("wrong");
 	}
 	currentQuestionIndex++;
-	getQuestions();
+	
+	if (currentQuestionIndex ==questions.length){
+		console.log("you are finished")
+	}
+	else{
+		getQuestions();
+	}
 }
 
 
