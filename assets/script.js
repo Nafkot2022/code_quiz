@@ -1,6 +1,12 @@
 const startButton= document.getElementById("startQuizBtn");
 const choicesEl = document.getElementById("choices");
 const mainPageEl =document.getElementById("mainPage");
+let rightWrongEl = document.getElementById("rightWrong");
+let textCorrect = document.createTextNode("correct");
+let textWrong = document.createTextNode("wrong");
+
+
+
 function startQuiz(){
 getQuestions();
 
@@ -31,20 +37,25 @@ function questionClick (){
 	//console.log(questions[currentQuestionIndex].answer);
 	//console.log(this.value==questions[currentQuestionIndex].answer);
 	if (this.value==questions[currentQuestionIndex].answer) {
-		console.log("correct");
+		//console.log("correct answer");
+		//rightWrongEl.text = "correct answer";
+		rightWrongEl.appendChild(textCorrect);
 	}
 	else{
-		console.log("wrong");
+		//console.log("wrong answer");
+		//rightWrongEl.text = "wrong answer";
+		rightWrongEl.appendChild(textWrong);
 	}
 	currentQuestionIndex++;
 	
 	if (currentQuestionIndex ==questions.length){
-		console.log("you are finished")
+		//console.log("you are finished")
 	}
 	else{
 		getQuestions();
 	}
 }
+const currentDiv = document.getElementById("incorrectAnswer");
 
 
 startButton.onclick= startQuiz;
