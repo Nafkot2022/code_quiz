@@ -1,7 +1,7 @@
 const startButton= document.getElementById("startQuizBtn");
 const choicesEl = document.getElementById("choices");
 const mainPageEl =document.getElementById("mainPage");
-let rightWrongEl = document.getElementById("rightWrong");
+let correctWrongEl = document.getElementById("rightWrong");
 let textCorrect = document.createTextNode("correct");
 let textWrong = document.createTextNode("wrong");
 
@@ -38,12 +38,12 @@ function questionClick (){
 	if (this.value==questions[currentQuestionIndex].answer) {
 		//console.log("correct answer");
 		//rightWrongEl.text = "correct answer";
-		rightWrongEl.appendChild(textCorrect);
+		correctWrongEl.appendChild(textCorrect);
 	}
 	else{
 		//console.log("wrong answer");
 		//rightWrongEl.text = "wrong answer";
-		rightWrongEl.appendChild(textWrong);
+		correctWrongEl.appendChild(textWrong);
 	}
 	currentQuestionIndex++;
 	
