@@ -5,13 +5,12 @@ let rightWrongEl = document.getElementById("rightWrong");
 let textCorrect = document.createTextNode("correct");
 let textWrong = document.createTextNode("wrong");
 
-
-
+let currentQuestionIndex = 0;
+//start quiz function
 function startQuiz(){
 getQuestions();
-
 }
-var currentQuestionIndex = 0;
+
 function getQuestions(){
 	console.log(questions[currentQuestionIndex].questionTitle);
 	mainPageEl.setAttribute("hidden", true);

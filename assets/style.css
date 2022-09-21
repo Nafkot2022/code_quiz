@@ -1,3 +1,8 @@
+*{
+	box-sizing: border-box;
+	font-family:Arial, Helvetica, sans-serif
+}
+
 body{
 	background-color: whites;
 	display: block;
@@ -78,4 +83,40 @@ align-items: center;
 	display:flex;
 	align-items: center;
 	justify-content: center;
+}
+
+/*high score page*/
+.score-container{
+	background-color: white;
+}
+.high-score{
+	text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	margin-top: 100px;
+}
+.three-btns{
+ flex-direction: column;
+ display:flex;
+ align-items: center;
+ justify-content: center;
+}
+
+#clear-scorebtn{
+	color: white;
+	background-color: purple;
+	text-align: center;
+	margin-top: 10px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	border-radius: 10px;
+}
+#button{
+	color: white;
+	background-color: purple;
+	text-align: center;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	border-radius: 10px;
+	padding: 20px;
 }
