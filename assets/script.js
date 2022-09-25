@@ -26,7 +26,7 @@ getQuestions();
 }
 
 function getQuestions(){
-	countdown();
+	timeInterval = setInterval(countdown,1000);
 	//console.log(questions[currentQuestionIndex].questionTitle);
 	mainPageEl.setAttribute("hidden", true);
 	
@@ -68,7 +68,7 @@ function questionClick (){
 	if (currentQuestionIndex ==questions.length){
 		//console.log("you are finished")
 		timerEl.textContent = "End";
-  clearInterval(timeInterval);
+ 
 		endGame();
 	}
 	else{
@@ -80,21 +80,16 @@ const currentDiv = document.getElementById("incorrectAnswer");
 
 //countdown timer, begins at 180 seconds
 function countdown() {
-  timeInterval = setInterval(function () {
-    
-    if (timeLeft > 1) {
-      timerEl.textContent = " " + timeLeft + " seconds";
-      timeLeft--;
-    } 
-    else if (timeLeft === 1) {
-      timerEl.textContent = " " + timeLeft + " seconds";
-      timeLeft--;
-    } 
-  }, 1000);
+	timeLeft--;
+	timerEl.textContent = timeLeft + "seconds";
+	if(timeLeft <= 0){
+		endGame();
+	}
 
 }
-saveScore.onclick = saveHighScore;
 //high score
+saveScore.onclick = saveHighScore;
+
 function saveHighScore(){
 	var highscores =
 	JSON.parse(window.localStorage.getItem("highscores")) || [];
@@ -108,10 +103,10 @@ window.localStorage.setItem("highscores", JSON.stringify(highscores));
 
 }
 	
-
 //end game function
 
 function endGame(){
+	clearInterval(timeInterval);
 	//let scoreEl =document.querySelector("#score");
 	//scoreEl.textContent = ("Your Score: " + "score");
 	scoreContainerEl.removeAttribute("class");
