@@ -14,7 +14,7 @@
     <a class="leftHeader">View High Score</a>
   </div>
   <div class="rightHeader">
-    <a>Time Remaining :<span id= "countDown">180 seconds</span></a>
+    <a>Time Remaining: <span id= "countDown">60</span></a>
   </div>
 </header>
 <!--main page-->
@@ -32,10 +32,22 @@
     </section>
   </section>
 <!--question and answer options container-->
-    <section class ="choicesContainer" style="display: block">
-      <h2 id = "option"></h2>
+    <div id ="questionContainer">
+      <h2 id = "currentQuestion"></h2>
       <div id ="choices"></div>
-    </section>
+      <h3 id="score"></h3>
+    </div>
+<!--save score-->
+    <div  id="score-container">
+        <h1 id="final-score">Save Score</h1>
+        <section>
+          <input type="text" name="username" id="user-name" placeholder="username"/>
+          <button type="submit" class="#button" id="save-btn">Save Score</button>
+        </section>
+        <a class="button" href="/index.html">Play Again</a>
+        <a class="button" href="/">Return Home</a>
+    </div>
+
   </body>
   
   <!--incorrect answer display-->

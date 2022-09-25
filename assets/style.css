@@ -14,6 +14,10 @@ body{
 .rightHeader{
 	color:red;
 	display: block;
+	border-style:inset;
+	margin: 5px;
+	padding: 10px;
+	text-shadow: 1cm;
 }
 
 .leftHeader{
@@ -22,6 +26,7 @@ body{
 	text-decoration-style: double;
 	display:block
 }
+
 
 .mainHeader {
 display:flex;
@@ -50,6 +55,7 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 	align-items: center;
 	justify-content: center;
 }
+
 #mainPageSummary {
 flex-wrap: wrap;
 justify-content: center;
@@ -74,18 +80,12 @@ align-items: center;
 	border-radius: 5px;
 }
 
-#incorrectAnswer{
-	text-align: center;
-	font-size: medium;
-	font-style: italic;
-	color: red;
-	padding: 20px;
-	width: 60vw;
-}
-
 /*questions and answers area*/
-.choicesContainer{
-	flex-direction: column;
+.questionContainer{
+	color: purple;
+	text-align: center;
+	padding: 10px;
+	border-color: black;
 }
 #option{
 text-align: center;
@@ -95,26 +95,40 @@ font-family: Arial, Helvetica, sans-serif;
 }
 #choices{
 justify-content: center;
-padding: 15px 26vw ;
 align-items: center;
-display:list-item;
+display:grid;
+width:100%;
+background-color: purple;
+
 }
 
-/*high score page*/
-.score-container{
-	background-color: white;
+/*save score page*/
+
+#score-container{
+	background-color:plum;
+	text-align: center;
+	display: grid;
+
 }
+
+.hide{
+	display: none;
+
+}
+
 .high-score{
 	text-align: center;
 	font-family: Arial, Helvetica, sans-serif;
 	font-weight: bold;
 	margin-top: 100px;
 }
+
 .three-btns{
  flex-direction: column;
  display:flex;
  align-items: center;
  justify-content: center;
+ 
 }
 
 #clear-scorebtn{
@@ -126,12 +140,11 @@ display:list-item;
 	margin-bottom: 10px;
 	border-radius: 10px;
 }
-#button{
-	color: white;
-	background-color: purple;
+.button{
+	color: purple;
+	background-color: plum;
 	text-align: center;
-	margin-top: 10px;
-	margin-bottom: 10px;
-	border-radius: 10px;
-	padding: 20px;
+	padding-bottom: 10px;
+	margin-top: 15px;
+	
 }
