@@ -107,13 +107,11 @@ background-color: purple;
 #score-container{
 	background-color:plum;
 	text-align: center;
-	display: grid;
-
 }
+
 
 .hide{
 	display: none;
-
 }
 
 .high-score{

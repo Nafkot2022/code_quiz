@@ -12,22 +12,19 @@ const userName = document.getElementById("user-name");
 
 let timeLeft = 60;
 let timeInterval;
-
-
-
 let currentQuestionIndex = 0;
 
 //start quiz function
 function startQuiz(){
 	choicesEl.setAttribute("hidden", true);
-	scoreContainerEl.setAttribute("hidden", true);
+	timeInterval = setInterval(countdown,1000);
+	//scoreContainerEl.setAttribute("hidden", true);
 getQuestions();
 
 }
-
+//questions fuction
 function getQuestions(){
-	timeInterval = setInterval(countdown,1000);
-	//console.log(questions[currentQuestionIndex].questionTitle);
+	
 	mainPageEl.setAttribute("hidden", true);
 	
 	let currentQuestion = questions[currentQuestionIndex];
@@ -44,22 +41,14 @@ function getQuestions(){
 		btn.onclick = questionClick;
 		choicesEl.appendChild(btn);
 	}
-
 }
 
 function questionClick (){
-	//console.log(this.value);
-	//console.log(questions[currentQuestionIndex].answer);
-	//console.log(this.value==questions[currentQuestionIndex].answer);
 	correctWrongEl.textContent= ""
 	if (this.value==questions[currentQuestionIndex].answer) {
-		//console.log("correct answer");
-		//rightWrongEl.text = "correct answer";
 		correctWrongEl.appendChild(textCorrect);
 	}
 	else{
-		//console.log("wrong answer");
-		//rightWrongEl.text = "wrong answer";
 		correctWrongEl.appendChild(textWrong);
 		timeLeft = timeLeft -10;
 	}
@@ -67,8 +56,7 @@ function questionClick (){
 	
 	if (currentQuestionIndex ==questions.length){
 		//console.log("you are finished")
-		timerEl.textContent = "End";
- 
+		timerEl.textContent = timeLeft;
 		endGame();
 	}
 	else{
@@ -77,19 +65,19 @@ function questionClick (){
 }
 const currentDiv = document.getElementById("incorrectAnswer");
 
-
 //countdown timer, begins at 180 seconds
 function countdown() {
 	timeLeft--;
 	timerEl.textContent = timeLeft + "seconds";
 	if(timeLeft <= 0){
+		//clearInterval(timeInterval);
 		endGame();
 	}
 
 }
 //high score
 saveScore.onclick = saveHighScore;
-
+//save highscore
 function saveHighScore(){
 	var highscores =
 	JSON.parse(window.localStorage.getItem("highscores")) || [];
@@ -100,11 +88,10 @@ let score= {
 console.log(JSON.stringify(score));
 highscores.push(score);
 window.localStorage.setItem("highscores", JSON.stringify(highscores));
-
+window.location.replace("/highscore.html");
 }
 	
 //end game function
-
 function endGame(){
 	clearInterval(timeInterval);
 	//let scoreEl =document.querySelector("#score");
