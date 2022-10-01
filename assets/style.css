@@ -107,6 +107,7 @@ background-color: purple;
 #score-container{
 	background-color:plum;
 	text-align: center;
+	display: grid;
 }
 
 
@@ -145,4 +146,11 @@ background-color: purple;
 	padding-bottom: 10px;
 	margin-top: 15px;
 	
+}
+
+.high-score-container{
+	color: purple;
+	font-family: Arial, Helvetica, sans-serif;
+	flex-direction: column-reverse;
+	text-align: center;
 }

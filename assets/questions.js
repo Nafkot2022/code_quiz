@@ -1,23 +1,23 @@
 const questions =[
 	{
-		questionTitle: "Which one of the following ISNOT a data type? 1",
-		options: ["string", "boolean", "happy", "number"],
-		answer: "happy",
+		questionTitle: "Which one of the following IS NOT a data type? 1",
+		options: ["string", "boolean", "symbols", "number"],
+		answer: "symbols",
 	},
 	{
-		questionTitle: "Which one of the following IS NOT a data type?2",
-		options: ["string", "boolean", "happy", "number"],
-		answer: "happy",
+		questionTitle: "Inside which HTML element do we put the JavaScript?",
+		options: ["<script>", "<js>", "<javascript>", "<scripting>"],
+		answer: "<script>",
 	},
 	{
-		questionTitle: "Which one of the following ISNOT a data type?3",
-		options: ["string", "boolean", "happy", "number"],
-		answer: "happy",
+		questionTitle: "Where is the correct place to insert a JavaScript",
+		options: ["The <head> section", "The <body> section", "Both", "Neither"],
+		answer: "The <body> section",
 	},
 	{
-		questionTitle: "Which one of the following ISNOT a data type?",
-		options: ["string", "boolean", "happy", "number"],
-		answer: "happy",
+		questionTitle: "How do you create a function in JavaScript?",
+		options: ["function myFunction()", "function:myFunction()", "function=myFunction()", "All the above"],
+		answer: "function myFunction()",
 	}
 ]
 
